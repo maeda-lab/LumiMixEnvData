@@ -1,0 +1,38 @@
+
+\subsection{Experiment 2 Results}
+
+Experiment 2 consisted of two parts: a 6-trial exploration phase to find optimal brightness mixing ratios, followed by a 3-trial parameter adjustment phase to evaluate velocity perception characteristics.
+
+\subsubsection{Exploration Phase Results}
+
+In the exploration phase, participants adjusted the brightness mixing ratio to minimize velocity fluctuations in the lower image. The median values from 6 trials for each participant were as follows:
+
+\item ONO: 0.633 (mean: 0.680, std: 0.158)
+\item LL: 0.218 (mean: 0.263, std: 0.172)
+\item HOU: 0.316 (mean: 0.378, std: 0.195)
+\item OMU: 0.734 (mean: 0.714, std: 0.123)
+\item YAMA: 0.615 (mean: 0.643, std: 0.072)
+
+\end{itemize}
+
+The exploration results show individual differences in preferred brightness mixing ratios, ranging from 0.218 to 0.734.
+
+\subsubsection{Parameter Adjustment Phase Results}
+
+Using the optimized brightness mixing ratios from the exploration phase, participants adjusted the velocity function parameters $v(t) = V_0 + A_1\sin(\omega t + \phi_1) + A_2\sin(2\omega t + \phi_2)$ to match velocity sensations between upper and lower images.
+
+The average parameter values across all participants were:
+
+\item $V_0 = 1.072$
+\item $A_1 = 0.489$
+\item $\phi_1 = 2.817$ (0.897$\pi$)
+\item $A_2 = 0.368$
+\item $\phi_2 = 1.857$ (0.591$\pi$)
+
+\end{itemize}
+
+\subsubsection{Comparison with Experiment 1}
+
+The optimized brightness mixing ratios in Experiment 2 resulted in improved velocity perception characteristics compared to the linear mixing approach in Experiment 1. The average $V_0$ value of 1.072 in Experiment 2 is closer to the theoretical value of 2.0 than the results from Experiment 1, indicating that the redesigned mixing function successfully improved velocity reproduction accuracy.
+
+This improvement demonstrates the effectiveness of the proposed brightness mixing approach in compensating for image transmission delay in remote control systems while maintaining subjective velocity equivalence.

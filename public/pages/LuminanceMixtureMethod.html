@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="path-to-your-favicon"/>
+    <title>Video Platform</title>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .video-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 10px;
+        }
+        .video-item {
+            padding: 10px;
+            background-color: #0070ff47;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .video-item iframe {
+            margin-bottom: 10px;
+        }
+        .video-item p {
+            width: 100%;
+            height: auto;
+            color: blueviolet;
+            font-size: 20px;
+            font-weight: bold;
+            display: contents;
+            margin-top: 10px;
+        }
+        h1 {
+            color: #00b6ff;
+        }
+         h2, h3 {
+      color: #222;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+    }
+    table, th, td {
+      border: 1px solid #aaa;
+    }
+    th, td {
+      padding: 8px;
+      text-align: center;
+    }
+    code {
+      background-color: #eee;
+      padding: 2px 4px;
+      font-family: monospace;
+    }
+    pre {
+      background-color: #eee;
+      padding: 10px;
+      overflow-x: auto;
+    }
+    </style>
+</head>
+<body>
+    <h1>輝度合成の検証</h1>
+    <div class="video-container">
+        <a href="https://human-info-eng-lab.slack.com/archives/C06SSFFR72T/p1749518314122789?thread_ts=1749470464.872909&cid=C06SSFFR72T" target="_blank" rel="noopener noreferrer">ToDoとしては，下記の手順でPlan Aの結果を報告していただくのが良いと思いますがいかがでしょうか．</a>
+            <ul>
+                <li>
+                   <h4>（Plan A）モノクロ動画像をRawImageのRGB値を直接計算し，アルファブレンド方式を用いない方法で，RGBが線形になることを確認する．</h4> 
+                    <p>アルファ値を変更しない場合、上のRawImageしか見えなくなってしまいます。</p>
+                    <p>実際には、上のRawImageでは固定のアルファ値を使用し、上下のRawImageRGB値を線形に変化させる方法を試しました。</p>
+                    <p>その結果、合成後の輝度値も線形に変化しましたが、最大輝度値は上RawImageのアルファ値が大きくなるにつれて増加することが確認できました。</p>
+                    <div class="video-item">
+                        <iframe src="https://drive.google.com/file/d/1syqupAW1kJLvt8ZrFcO3bpp3xs1MGsgm/preview" width="640" height="480" allow="autoplay" frameborder="0" allowfullscreen></iframe>
+                        <p>rgb変化<br>alpha不变: 上(A)のRawImageのalpha = 0.5,下(B)のRawImageのalpha=1</p>
+                    </div> 
+            
+                    <div class="video-item">
+                        <iframe src="https://drive.google.com/file/d/1mWTKqjv1PXY7zkJpNsbfq5IlbFHMj3x2/preview" width="640" height="480" allow="autoplay" frameborder="0" allowfullscreen></iframe>
+                        <p>rgb変化<br>alpha不变: 上(A)のRawImageのalpha = 0.7,下(B)のRawImageのalpha=1</p>
+                    </div>
+
+                    <div class="video-item">
+                        <iframe src="https://drive.google.com/file/d/1SbQ92I-_mmfl9NprWI64DOzcYEZSTkRG/preview" width="640" height="480" allow="autoplay" frameborder="0" allowfullscreen></iframe>
+                        <p>rgb変化<br>alpha不变: 上(A)のRawImageのalpha = 0.9,下(B)のRawImageのalpha=1</p>
+                    </div>
+
+                    <div class="video-item">
+                        <iframe src="https://drive.google.com/file/d/1woI8BjMXPa3kYxI3llyjiDzQhbVMaWnv/preview" width="640" height="480" allow="autoplay" frameborder="0" allowfullscreen></iframe>
+                        <p>rgb変化<br>alpha不变: 上(A)のRawImageのalpha = 1,下(B)のRawImageのalpha=1</p>
+                    </div>
+                </li>
+
+                <li>
+                    <h4>（Plan B）モノクロ動画像による輝度混合（アルファブレンド方式）によって，RGBが線形になるかを確認する．</h4>
+                    <p>この際、上の RawImage のアルファ値のみを変化させ、RGBの値自体は固定（変化なし）としたところ、
+                        合成後に得られる輝度値は線形には変化しないことが確認されました。</p>
+                    <div class="video-item">
+                        <iframe src="https://drive.google.com/file/d/1-4GO9_c-BWDfa13N-z-mlrrL_bS8NteL/preview" width="640" height="480" allow="autoplay" frameborder="0" allowfullscreen></iframe>
+                        <p>rgb不变<br>alpha変化</p>
+                    </div> 
+                </li>
+
+                <li>
+                    <h4>（Plan C）前項によって，RGBが線形にならなければ，ガンマ空間のγ補正をかけてRowImageの数値が線形に変化されることを確認する．</h4>
+                    <div class="video-item">
+                        <iframe src="https://drive.google.com/file/d/1sVqBuzvN2h6jIRXZgyyf_lF1ivJbXwst/preview" width="640" height="480" allow="autoplay" frameborder="0" allowfullscreen></iframe>
+                        <p>rgb不变<br>alpha変化(Gamma)</p>
+                    </div>
+                </li>
+            </ul>
+    </div>
+    
+    <div style="margin-top: 1em;">
+            <a href="https://qiita.com/chemweb000/items/7f6242a8539d38ea66e4" target="_blank" rel="noopener">
+                RGB画像を輝度画像に変換
+            </a>
+        </div>
+
+        <div style="margin-top: 1em;">
+            <a href="https://github.com/jasminelong/vectionProject/blob/20f134adc6cd601409ece66b4a8b4ea7497b773f/public/py/VideoCaptureRGB.py#L46" target="_blank" rel="noopener">
+                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" 
+                    alt="GitHub" width="20" style="vertical-align: middle;">
+                View this line on GitHub
+            </a>
+            <p style="margin-top: 5px; font-size: 0.9em; color: #555;">
+                このコードは、動画内の特定領域のRGB平均値をフレームごとに取得し、その変化を波形グラフとして可視化し、元の映像と合成して新しい動画として出力するものです。
+            </p>
+        </div>
+
+        <h2>✅ rgb変化,alpha不变: 上(A)のRawImageのalpha = 0.5設定条件のまとめ</h2>
+        <table>
+            <tr><th>項目</th><th>設定内容</th></tr>
+            <tr><td>上層 RawImage</td><td>alpha を固定（0.5）</td></tr>
+            <tr><td>下層 RawImage</td><td>alpha = 1（完全不透明）</td></tr>
+            <tr><td>上下の RGB</td><td>リアルタイムで変化</td></tr>
+            <tr><td>合成方式</td><td>Unity のデフォルトアルファブレンド</td></tr>
+            <tr><td>カラースペース</td><td>Linear（Gamma ではない）</td></tr>
+        </table>
+
+        <h2>🎯 アルファブレンド式</h2><br>
+        <p>Unity におけるデフォルトの合成式は以下の通り：</p>
+        <p>\[
+            \text{FinalColor} = \text{Src.rgb} \times \text{Src.a} + \text{Dst.rgb} \times (1 - \text{Src.a})
+        \]</p>
+        <ul>
+            <li><code>Src</code> = 上層 RawImage の RGB</li>
+            <li><code>Dst</code> = 下層 RawImage の RGB</li>
+        </ul>
+        <p>今回は <code>Src.a = 0.5</code> のため、</p>
+        <p>\[
+            \text{BlendedRGB} = 0.5 \times \text{top} + 0.5 \times \text{bottom}
+        \]</p>
+
+        <h2>🎨 輝度（Luminance）の計算</h2>
+        <p>Rec.709 の定義による輝度：</p>
+        <p>\[
+            Y = 0.2126 R + 0.7152 G + 0.0722 B
+        \]</p>
+        <p>したがって：</p>
+  <!--       <p>\[
+            Y_{\text{blend}} = 0.5 Y_{\text{top}} + 0.5 Y_{\text{bottom}}
+        \]</p> -->
+        
+         <ul>
+    <li>
+      <code>top = (r1, g1, b1)</code>，<code>bottom = (r2, g2, b2)</code>
+    </li>
+    <li>
+      合成后：<code>blended = 0.5 × top + 0.5 × bottom</code>
+    </li>
+    <li>
+      最终辉度：
+      <br>
+      \[
+      Y_{\text{blended}} =
+      0.2126 \times (0.5r_1 + 0.5r_2) + 
+      0.7152 \times (0.5g_1 + 0.5g_2) + 
+      0.0722 \times (0.5b_1 + 0.5b_2)
+     　 = 127.49
+      \]
+    </li>
+    <li>
+      \[
+      r1　+ r2 =  g1 + g2 =  b1 + b2 = 255
+      \]
+  </ul>
+　
+
+        <h2>✅ まとめ</h2>
+        <table>
+            <tr><th>項目</th><th>内容</th></tr>
+            <tr><td>合成方式</td><td>0.5 : 0.5 の平均ブレンド</td></tr>
+            <tr><td>RGB の変化</td><td>上下画像の色が平均されて変化</td></tr>
+            <tr><td>輝度の変化</td><td>上下の輝度の平均として線形に変化</td></tr>
+            <tr><td>条件</td><td>カラースペースが Linear であること,でも輝度値最大は180だけ</td></tr>
+        </table>
+                
+ 
+</body>
+</html>

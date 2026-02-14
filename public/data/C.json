@@ -1,0 +1,161 @@
+{
+    "Dots_forward": {
+      "5 fps": [
+        "public/ExperimentDataO/20250109_125225_Dots_forward_luminanceMixture_cameraSpeed4_fps5_A_trialNumber1.csv",
+        "public/ExperimentDataO/20250109_054935_Dots_forward_luminanceMixture_cameraSpeed4_fps5_A_trialNumber2.csv",
+        "public/ExperimentDataO/20250109_055113_Dots_forward_luminanceMixture_cameraSpeed4_fps5_A_trialNumber3.csv",
+  
+        "public/ExperimentData1/20241113_154414_luminanceMixture_cameraSpeed4_fps5_B_trialNumber1.csv",
+        "public/ExperimentData1/20241113_155123_luminanceMixture_cameraSpeed4_fps5_B_trialNumber2.csv",
+        "public/ExperimentData1/20241113_155817_luminanceMixture_cameraSpeed4_fps5_B_trialNumber3.csv"
+      ],
+      "10 fps": [
+        "public/ExperimentDataO/20250109_140143_Dots_forward_luminanceMixture_cameraSpeed4_fps10_A_trialNumber1.csv",
+        "public/ExperimentDataO/20250109_140333_Dots_forward_luminanceMixture_cameraSpeed4_fps10_A_trialNumber2.csv",
+        "public/ExperimentDataO/20250109_140510_Dots_forward_luminanceMixture_cameraSpeed4_fps10_A_trialNumber3.csv",
+  
+        "public/ExperimentData1/20241113_161351_luminanceMixture_cameraSpeed4_fps10_B_trialNumber1.csv",
+        "public/ExperimentData1/20241113_162151_luminanceMixture_cameraSpeed4_fps10_B_trialNumber2.csv",
+        "public/ExperimentData1/20241113_162914_luminanceMixture_cameraSpeed4_fps10_B_trialNumber3.csv"
+      ],
+       
+      "30 fps": [
+        "public/ExperimentDataO/20250109_141145_Dots_forward_luminanceMixture_cameraSpeed4_fps30_A_trialNumber1.csv",
+        "public/ExperimentDataO/20250109_141325_Dots_forward_luminanceMixture_cameraSpeed4_fps30_A_trialNumber2.csv",
+        "public/ExperimentDataO/20250109_141502_Dots_forward_luminanceMixture_cameraSpeed4_fps30_A_trialNumber3.csv",
+  
+        "public/ExperimentData1/20241113_163839_luminanceMixture_cameraSpeed4_fps30_B_trialNumber1.csv",
+        "public/ExperimentData1/20241113_164516_luminanceMixture_cameraSpeed4_fps30_B_trialNumber2.csv",
+        "public/ExperimentData1/20241113_165322_luminanceMixture_cameraSpeed4_fps30_B_trialNumber3.csv"
+      ],
+      "60 fps": [
+        "public/ExperimentDataO/20250109_052750_Natural_right_continuous_cameraSpeed4_fps60_A_trialNumber1.csv",
+        "public/ExperimentDataO/20250109_052920_Natural_right_continuous_cameraSpeed4_fps60_A_trialNumber2.csv",
+        "public/ExperimentDataO/20250109_053053_Natural_right_continuous_cameraSpeed4_fps60_A_trialNumber3.csv",
+  
+        "public/ExperimentData1/20241113_150930_continuous_cameraSpeed4_fps60_B_trialNumber1.csv",
+        "public/ExperimentData1/20241113_151635_continuous_cameraSpeed4_fps60_B_trialNumber2.csv",
+        "public/ExperimentData1/20241113_152721_continuous_cameraSpeed4_fps60_B_trialNumber3.csv"
+      ]
+    },
+    "Dots_right": {
+      "5 fps": [
+        "public/ExperimentDataO/20250109_055617_Dots_right_luminanceMixture_cameraSpeed4_fps5_A_trialNumber1.csv",
+        "public/ExperimentDataO/20250109_055430_Dots_right_luminanceMixture_cameraSpeed4_fps5_A_trialNumber2.csv",
+        "public/ExperimentDataO/20250109_055258_Dots_right_luminanceMixture_cameraSpeed4_fps5_A_trialNumber3.csv",
+  
+        "public/ExperimentDataO/20250115_105101_Dots_right_luminanceMixture_cameraSpeed4_fps5_B_trialNumber1.csv",
+        "public/ExperimentDataO/20250115_110002_Dots_right_luminanceMixture_cameraSpeed4_fps5_B_trialNumber2.csv",
+        "public/ExperimentDataO/20250115_121312_Dots_right_luminanceMixture_cameraSpeed4_fps5_B_trialNumber3.csv"
+      ],
+      "10 fps": [
+        "public/ExperimentDataO/20250115_211156_Dots_right_luminanceMixture_cameraSpeed4_fps10_A_trialNumber1.csv",
+        "public/ExperimentDataO/20250115_211020_Dots_right_luminanceMixture_cameraSpeed4_fps10_A_trialNumber2.csv",
+        "public/ExperimentDataO/20250115_210839_Dots_right_luminanceMixture_cameraSpeed4_fps10_A_trialNumber3.csv",
+  
+        "public/ExperimentDataO/20250115_103830_Dots_right_luminanceMixture_cameraSpeed4_fps10_B_trialNumber1.csv",
+        "public/ExperimentDataO/20250115_111649_Dots_right_luminanceMixture_cameraSpeed4_fps10_B_trialNumber2.csv",
+        "public/ExperimentDataO/20250115_120707_Dots_right_luminanceMixture_cameraSpeed4_fps10_B_trialNumber3.csv"
+      ],
+  
+      "30 fps": [
+        "public/ExperimentDataO/20250115_210035_Dots_right_luminanceMixture_cameraSpeed4_fps30_A_trialNumber1.csv",
+        "public/ExperimentDataO/20250115_205858_Dots_right_luminanceMixture_cameraSpeed4_fps30_A_trialNumber3.csv",
+        "public/ExperimentDataO/20250115_210209_Dots_right_luminanceMixture_cameraSpeed4_fps30_A_trialNumber2.csv",
+  
+        "public/ExperimentDataO/20250115_110714_Dots_right_luminanceMixture_cameraSpeed4_fps30_B_trialNumber1.csv",
+        "public/ExperimentDataO/20250115_114049_Dots_right_luminanceMixture_cameraSpeed4_fps30_B_trialNumber2.csv",
+        "public/ExperimentDataO/20250115_123449_Dots_right_luminanceMixture_cameraSpeed4_fps30_B_trialNumber3.csv"
+      ],
+      "60 fps": [
+        "public/ExperimentDataO/20250115_205359_Dots_right_continuous_cameraSpeed4_fps60_A_trialNumber1.csv",
+        "public/ExperimentDataO/20250115_205537_Dots_right_continuous_cameraSpeed4_fps60_A_trialNumber2.csv",
+        "public/ExperimentDataO/20250115_205716_Dots_right_continuous_cameraSpeed4_fps60_A_trialNumber3.csv",
+  
+        "public/ExperimentDataO/20250115_122547_Dots_right_continuous_cameraSpeed4_fps60_B_trialNumber1.csv",
+        "public/ExperimentDataO/20250115_120055_Dots_right_continuous_cameraSpeed4_fps60_B_trialNumber2.csv",
+        "public/ExperimentDataO/20250115_121855_Dots_right_continuous_cameraSpeed4_fps60_B_trialNumber3.csv"
+  
+        
+      ]
+    },
+    "Natural_right": {
+      "5 fps": [
+        "public/ExperimentDataO/20250109_050301_Natural_right_luminanceMixture_cameraSpeed4_fps5_A_trialNumber1.csv",
+        "public/ExperimentDataO/20250109_050122_Natural_right_luminanceMixture_cameraSpeed4_fps5_A_trialNumber2.csv",
+        "public/ExperimentDataO/20250109_045745_Natural_right_luminanceMixture_cameraSpeed4_fps5_A_trialNumber3.csv",
+  
+        "public/ExperimentDataO/20250115_104823_Natural_right_luminanceMixture_cameraSpeed4_fps5_B_trialNumber1.csv",
+        "public/ExperimentDataO/20250115_114302_Natural_right_luminanceMixture_cameraSpeed4_fps5_B_trialNumber2.csv",
+        "public/ExperimentDataO/20250115_121715_Natural_right_luminanceMixture_cameraSpeed4_fps5_B_trialNumber3.csv"
+      ],
+      "10 fps": [
+        "public/ExperimentDataO/20250109_052116_Natural_right_luminanceMixture_cameraSpeed4_fps10_A_trialNumber1.csv",
+        "public/ExperimentDataO/20250108_190200_Natural_right_luminanceMixture_cameraSpeed4_fps10_A_trialNumber2.csv",
+        "public/ExperimentDataO/20250109_052301_Natural_right_luminanceMixture_cameraSpeed4_fps10_A_trialNumber3.csv",
+  
+        "public/ExperimentDataO/20250115_104154_Natural_right_luminanceMixture_cameraSpeed4_fps10_B_trialNumber1.csv",
+        "public/ExperimentDataO/20250115_112014_Natural_right_luminanceMixture_cameraSpeed4_fps10_B_trialNumber2.csv",
+        "public/ExperimentDataO/20250115_120508_Natural_right_luminanceMixture_cameraSpeed4_fps10_B_trialNumber3.csv"
+      ],
+  
+      "30 fps": [
+        "public/ExperimentDataO/20250108_192853_Natural_right_luminanceMixture_cameraSpeed4_fps30_A_trialNumber1.csv",
+        "public/ExperimentDataO/20250109_052608_Natural_right_luminanceMixture_cameraSpeed4_fps30_A_trialNumber2.csv",
+        "public/ExperimentDataO/20250109_052438_Natural_right_luminanceMixture_cameraSpeed4_fps30_A_trialNumber3.csv",
+  
+        "public/ExperimentDataO/20250115_110536_Natural_right_luminanceMixture_cameraSpeed4_fps30_B_trialNumber1.csv",
+        "public/ExperimentDataO/20250115_115645_Natural_right_luminanceMixture_cameraSpeed4_fps30_B_trialNumber2.csv",
+        "public/ExperimentDataO/20250115_123057_Natural_right_luminanceMixture_cameraSpeed4_fps30_B_trialNumber3.csv"
+      ],
+      "60 fps": [
+        "public/ExperimentDataO/20250109_052750_Natural_right_continuous_cameraSpeed4_fps60_A_trialNumber1.csv",
+        "public/ExperimentDataO/20250109_052920_Natural_right_continuous_cameraSpeed4_fps60_A_trialNumber2.csv",
+        "public/ExperimentDataO/20250109_053053_Natural_right_continuous_cameraSpeed4_fps60_A_trialNumber3.csv",
+  
+        "public/ExperimentDataO/20250115_110909_Natural_right_continuous_cameraSpeed4_fps60_B_trialNumber1.csv",
+        "public/ExperimentDataO/20250115_111424_Natural_right_continuous_cameraSpeed4_fps60_B_trialNumber2.csv",
+        "public/ExperimentDataO/20250115_122341_Natural_right_continuous_cameraSpeed4_fps60_B_trialNumber3.csv"
+      ]
+    },
+    "Natural_forward": {
+      "5 fps": [
+        "public/ExperimentDataO/20250109_045137_Natural_forward_luminanceMixture_cameraSpeed4_fps5_A_trialNumber1.csv",
+        "public/ExperimentDataO/20250109_045327_Natural_forward_luminanceMixture_cameraSpeed4_fps5_A_trialNumber2.csv",
+        "public/ExperimentDataO/20250109_045509_Natural_forward_luminanceMixture_cameraSpeed4_fps5_A_trialNumber3.csv",
+  
+        "public/ExperimentDataO/20250115_104538_Natural_forward_luminanceMixture_cameraSpeed4_fps5_B_trialNumber1.csv",
+        "public/ExperimentDataO/20250115_114439_Natural_forward_luminanceMixture_cameraSpeed4_fps5_B_trialNumber2.csv",
+        "public/ExperimentDataO/20250115_120321_Natural_forward_luminanceMixture_cameraSpeed4_fps5_B_trialNumber3.csv"
+      ],
+      "10 fps": [
+        "public/ExperimentDataO/20250109_054323_Natural_forward_luminanceMixture_cameraSpeed4_fps10_A_trialNumber1.csv",
+        "public/ExperimentDataO/20250109_054323_Natural_forward_luminanceMixture_cameraSpeed4_fps10_A_trialNumber1.csv",
+        "public/ExperimentDataO/20250109_054454_Natural_forward_luminanceMixture_cameraSpeed4_fps10_A_trialNumber2.csv",
+  
+        "public/ExperimentDataO/20250115_104356_Natural_forward_luminanceMixture_cameraSpeed4_fps10_B_trialNumber1.csv",
+        "public/ExperimentDataO/20250115_111830_Natural_forward_luminanceMixture_cameraSpeed4_fps10_B_trialNumber2.csv",
+        "public/ExperimentDataO/20250115_121506_Natural_forward_luminanceMixture_cameraSpeed4_fps10_B_trialNumber3.csv"
+      ],
+  
+      "30 fps": [
+        "public/ExperimentDataO/20250109_053832_Natural_forward_luminanceMixture_cameraSpeed4_fps30_A_trialNumber1.csv",
+        "public/ExperimentDataO/20250109_054001_Natural_forward_luminanceMixture_cameraSpeed4_fps30_A_trialNumber2.csv",
+        "public/ExperimentDataO/20250109_054139_Natural_forward_luminanceMixture_cameraSpeed4_fps30_A_trialNumber3.csv",
+  
+        "public/ExperimentDataO/20250115_110355_Natural_forward_luminanceMixture_cameraSpeed4_fps30_B_trialNumber1.csv",
+        "public/ExperimentDataO/20250115_115839_Natural_forward_luminanceMixture_cameraSpeed4_fps30_B_trialNumber2.csv",
+        "public/ExperimentDataO/20250115_122924_Natural_forward_luminanceMixture_cameraSpeed4_fps30_B_trialNumber3.csv"
+      ],
+      "60 fps": [
+        "public/ExperimentDataO/20250109_053601_Natural_forward_continuous_cameraSpeed4_fps60_A_trialNumber1.csv",
+        "public/ExperimentDataO/20250108_202957_Natural_forward_continuous_cameraSpeed4_fps20_A_trialNumber2.csv",
+        "public/ExperimentDataO/20250109_053429_Natural_forward_continuous_cameraSpeed4_fps60_A_trialNumber3.csv",
+  
+        "public/ExperimentDataO/20250115_111211_Natural_forward_continuous_cameraSpeed4_fps60_B_trialNumber1.csv",
+        "public/ExperimentDataO/20250115_120921_Natural_forward_continuous_cameraSpeed4_fps60_B_trialNumber2.csv",
+        "public/ExperimentDataO/20250115_122125_Natural_forward_continuous_cameraSpeed4_fps60_B_trialNumber3.csv"
+      ]
+    }
+  }
+  
